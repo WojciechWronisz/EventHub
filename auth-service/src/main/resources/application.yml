@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/eventhub
+    username: eventhub
+    password: eventhub
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: "super_tajny_klucz_ktory_ma_miec_min_32_znaki_!!!"
+  expiration: 3600000
